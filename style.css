@@ -1,0 +1,108 @@
+body{
+
+    height: 100vh;
+    
+    background: linear-gradient(blue,white,rgb(100, 0, 8));
+
+       
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    flex-direction: column;
+  
+    
+   
+}
+
+.central{
+     
+    display: grid;
+    grid-template-columns: repeat(1, 20%);
+    gap: 0.5rem;
+    padding-top: 1rem;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin-right: 15%;
+    
+
+
+  
+}
+
+.central p{
+
+    font-size: 2rem;
+    
+}
+
+.central p:hover{
+
+    background:  rgba(59, 200, 255, 0.377);
+}
+
+.central p::selection{
+
+    background:  rgba(59, 200, 255, 0.377);
+}
+
+.central input:focus{
+
+    background:  rgba(192, 192, 192, 0.308);
+}
+
+
+.caixa{
+
+    background: rgba(255, 255, 255, 0.404);
+    box-shadow: 2rem 4rem 6rem rgba(0, 0, 0, 0.747);
+   border-radius: 6rem;
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; 
+    animation: pulseshadow  5s alternate infinite;
+    
+   
+}
+
+@keyframes pulseshadow{
+
+     0%,100%{
+
+        box-shadow: 2rem 4rem 6rem rgba(0, 0, 0, 0.747);
+        
+          
+
+     }50%{
+           
+        box-shadow: 1rem 2rem 4rem rgb(0, 0, 0);
+          
+
+     }
+
+}
+
+
+
+
+
+.controles{
+   
+    
+    margin-top: 1rem;
+    padding-right: 2rem;
+   width: 1rem;
+}
+
+
+.central button:hover{
+
+    background:  rgba(59, 200, 255, 0.377);
+}
+
+.central button::selection{
+
+    background:  rgba(59, 200, 255, 0.377);
+}
