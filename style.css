@@ -1,6 +1,6 @@
 body{
 
-    height: 100vh;
+    height: 80rem;
     
     background: linear-gradient(blue,white,rgb(100, 0, 8));
 
@@ -9,6 +9,8 @@ body{
     align-items: center; /* Center vertically */
     justify-content: center;
     flex-direction: column;
+    overflow-x: scroll; /* Hides horizontal scrollbar */
+    overflow-y: scroll; /
   
     
    
@@ -31,7 +33,7 @@ body{
 
 .central p{
 
-    font-size: 2rem;
+    font-size: large;
     
 }
 
@@ -56,8 +58,8 @@ body{
     background: rgba(255, 255, 255, 0.404);
     box-shadow: 2rem 4rem 6rem rgba(0, 0, 0, 0.747);
    border-radius: 6rem;
-    width: 30rem;
-    height: 40rem;
+    width: 27rem;
+    height: 25rem;
     display: flex;
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center horizontally */
