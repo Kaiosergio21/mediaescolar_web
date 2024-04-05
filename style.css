@@ -109,19 +109,87 @@ body{
     background:  rgba(59, 200, 255, 0.377);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 390px) {
     body {
 
         background: linear-gradient(blue,white,rgb(100, 0, 8));
 
         height: 100rem;
         width: auto; /* Remove fixed height */
+      overflow: hidden;
     }
 
     .central {
         margin-right: 0; 
         gap: 0.5rem;
         padding-bottom: 280%;/* Remove right margin */
+    }
+
+    .caixa {
+        width: 0%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .controles {
+        padding-right: 1rem; /* Adjust padding */
+    }
+    
+    .central p{
+
+        font-size: medium;
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    body {
+
+        background: linear-gradient(blue,white,rgb(100, 0, 8));
+
+        height: 100rem;
+        width: auto; /* Remove fixed height */
+      overflow: hidden;
+    }
+
+    .central {
+        margin-right: 0; 
+        gap: 0.5rem;
+        padding-bottom: 220%;/* Remove right margin */
+    }
+
+    .caixa {
+        width: 0%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .controles {
+        padding-right: 1rem; /* Adjust padding */
+    }
+    
+    .central p{
+
+        font-size: medium;
+        
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+
+        background: linear-gradient(blue,white,rgb(100, 0, 8));
+
+        height: 100rem;
+        width: auto; 
+        overflow: hidden;/* Remove fixed height */
+      
+    }
+
+    .central {
+        margin-right: 0; 
+        gap: 0.5rem;
+        padding-bottom: 50%;/* Remove right margin */
     }
 
     .caixa {
